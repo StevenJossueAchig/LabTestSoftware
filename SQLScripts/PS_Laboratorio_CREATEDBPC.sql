@@ -187,3 +187,99 @@ BEGIN
     WHERE Codigo = cliente_Update.Codigo;
 END;
 $$;
+
+
+---------------------------------------------------------
+                        MySQL
+---------------------------------------------------------
+-- Usar la base de datos
+USE dbproductos;
+
+-- Procedimiento almacenado para seleccionar todos los clientes
+DELIMITER //
+
+CREATE PROCEDURE cliente_SelectAll()
+BEGIN
+    SELECT Codigo, Cedula, Apellidos, Nombres, FechaNacimiento, Mail, Telefono, Direccion, Estado
+    FROM Cliente;
+END //
+
+DELIMITER ;
+
+-- Procedimiento almacenado para eliminar un cliente por ID
+DELIMITER //
+
+CREATE PROCEDURE cliente_Delete(IN p_Codigo INT)
+BEGIN
+    START TRANSACTION;
+    DELETE FROM Cliente
+    WHERE Codigo = p_Codigo;
+    COMMIT;
+END //
+
+DELIMITER ;
+
+-- Procedimiento almacenado para insertar un nuevo cliente
+DELIMITER //
+
+CREATE PROCEDURE cliente_Insert(
+    IN p_Cedula VARCHAR(10),
+    IN p_Apellidos VARCHAR(50),
+    IN p_Nombres VARCHAR(50),
+    IN p_FechaNacimiento DATETIME,
+    IN p_Mail VARCHAR(50),
+    IN p_Telefono VARCHAR(10),
+    IN p_Direccion VARCHAR(40),
+    IN p_Estado BOOLEAN
+)
+BEGIN
+    START TRANSACTION;
+    INSERT INTO Cliente (Cedula, Apellidos, Nombres, FechaNacimiento, Mail, Telefono, Direccion, Estado)
+    VALUES (p_Cedula, p_Apellidos, p_Nombres, p_FechaNacimiento, p_Mail, p_Telefono, p_Direccion, p_Estado);
+    COMMIT;
+END //
+
+DELIMITER ;
+
+-- Procedimiento almacenado para seleccionar un cliente por ID
+DELIMITER //
+
+CREATE PROCEDURE cliente_SelectById(IN p_Codigo INT)
+BEGIN
+    SELECT Codigo, Cedula, Apellidos, Nombres, FechaNacimiento, Mail, Telefono, Direccion, Estado
+    FROM Cliente
+    WHERE Codigo = p_Codigo;
+END //
+
+DELIMITER ;
+
+-- Procedimiento almacenado para actualizar un cliente
+DELIMITER //
+
+CREATE PROCEDURE cliente_Update(
+    IN p_Codigo INT,
+    IN p_Cedula VARCHAR(10),
+    IN p_Apellidos VARCHAR(50),
+    IN p_Nombres VARCHAR(50),
+    IN p_FechaNacimiento DATETIME,
+    IN p_Mail VARCHAR(50),
+    IN p_Telefono VARCHAR(10),
+    IN p_Direccion VARCHAR(40),
+    IN p_Estado BOOLEAN
+)
+BEGIN
+    START TRANSACTION;
+    UPDATE Cliente
+    SET Cedula = p_Cedula,
+        Apellidos = p_Apellidos,
+        Nombres = p_Nombres,
+        FechaNacimiento = p_FechaNacimiento,
+        Mail = p_Mail,
+        Telefono = p_Telefono,
+        Direccion = p_Direccion,
+        Estado = p_Estado
+    WHERE Codigo = p_Codigo;
+    COMMIT;
+END //
+
+DELIMITER ;
