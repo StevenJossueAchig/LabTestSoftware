@@ -6085,11 +6085,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven.csproj",
       "projectName": "Laboratorio1P3AchigSteven",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

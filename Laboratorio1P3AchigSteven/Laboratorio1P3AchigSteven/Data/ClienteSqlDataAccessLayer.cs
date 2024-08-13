@@ -52,7 +52,11 @@ namespace Laboratorio1P3AchigSteven.Data
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("cliente_Insert", con);
+                string query = "INSERT INTO Cliente (Cedula, Apellidos, Nombres, FechaNacimiento, Mail, Telefono, Direccion, Estado) " +
+                               "VALUES (@cedula, @apellidos, @nombres, @fechaNacimiento, @mail, @telefono, @direccion, @estado)";
+
+                //SqlCommand cmd = new SqlCommand("cliente_Insert", con);
+                SqlCommand cmd = new SqlCommand(query, con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@Cedula", cliente.Cedula);

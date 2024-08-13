@@ -1082,11 +1082,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Laboratorio1P3AchigSteven\\MSTestUnit\\MSTestUnit.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio1P3AchigSteven\\MSTestUnit\\MSTestUnit.csproj",
       "projectName": "MSTestUnit",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Laboratorio1P3AchigSteven\\MSTestUnit\\MSTestUnit.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio1P3AchigSteven\\MSTestUnit\\MSTestUnit.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Laboratorio1P3AchigSteven\\MSTestUnit\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio1P3AchigSteven\\MSTestUnit\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

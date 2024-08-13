@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Laboratorio2_Achig")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a73f0655d8592bdabcab9d74df4d70faf9eaebe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00491dbde054cdc2e267fbea894c5ee5979f4cef")]
 [assembly: System.Reflection.AssemblyProductAttribute("Laboratorio2_Achig")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Laboratorio2_Achig")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

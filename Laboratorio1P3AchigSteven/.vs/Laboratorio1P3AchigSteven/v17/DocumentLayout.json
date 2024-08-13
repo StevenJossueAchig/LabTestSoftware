@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Laboratorio1P3AchigSteven\\",
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio1P3AchigSteven\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9210B881-A61D-4481-A22D-1BFAB71D4F22}|Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven.csproj|c:\\users\\usuario\\desktop\\laboratorio1p3achigsteven\\laboratorio1p3achigsteven\\data\\clientesqldataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9210B881-A61D-4481-A22D-1BFAB71D4F22}|Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven.csproj|c:\\users\\usuario\\desktop\\labtestsoftware\\laboratorio1p3achigsteven\\laboratorio1p3achigsteven\\data\\clientesqldataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9210B881-A61D-4481-A22D-1BFAB71D4F22}|Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven.csproj|solutionrelative:laboratorio1p3achigsteven\\data\\clientesqldataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -40,11 +40,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ClienteSqlDataAccessLayer.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven\\Data\\ClienteSqlDataAccessLayer.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven\\Data\\ClienteSqlDataAccessLayer.cs",
               "RelativeDocumentMoniker": "Laboratorio1P3AchigSteven\\Data\\ClienteSqlDataAccessLayer.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven\\Data\\ClienteSqlDataAccessLayer.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio1P3AchigSteven\\Laboratorio1P3AchigSteven\\Data\\ClienteSqlDataAccessLayer.cs",
               "RelativeToolTip": "Laboratorio1P3AchigSteven\\Data\\ClienteSqlDataAccessLayer.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T05:54:08.897Z",
               "EditorCaption": ""
