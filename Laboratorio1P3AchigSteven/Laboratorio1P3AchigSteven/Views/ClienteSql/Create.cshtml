@@ -1,0 +1,83 @@
+﻿@model Laboratorio1P3AchigSteven.Models.ClienteSql
+
+@{
+    ViewData["Title"] = "Crear";
+}
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Crear Cliente</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Crear Cliente</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+
+<form id="quickForm" asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+    <section class="content">
+        <div class="container-fluid">
+            <div class="card card-secondary">
+                <div class="card-header">
+                    <h3 class="card-title">Agregar Cliente</h3>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="cedula">Cédula</label>
+                        <input type="text" name="Cedula" class="form-control" id="cedula" placeholder="Cédula" maxlength="10" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="Apellidos" class="form-control" id="apellidos" placeholder="Apellidos" maxlength="50" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="nombres">Nombres</label>
+                        <input type="text" name="Nombres" class="form-control" id="nombres" placeholder="Nombres" maxlength="50" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                        <input name="FechaNacimiento" type="date" class="form-control" id="fechaNacimiento" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Mail</label>
+                        <input type="email" name="Mail" class="form-control" id="mail" placeholder="Mail" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" name="Telefono" class="form-control" id="telefono" placeholder="Teléfono" maxlength="10" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" name="Direccion" class="form-control" id="direccion" placeholder="Dirección" maxlength="200" required />
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="Estado" id="estado" class="form-check-input" />
+                        <label class="form-check-label" for="estado">Estado</label>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-success btn-sm">
+                        <i class="fas fa-save"></i> Guardar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a asp-action="Index"> << Regresar</a>
+        </div>
+    </section>
+</form>
