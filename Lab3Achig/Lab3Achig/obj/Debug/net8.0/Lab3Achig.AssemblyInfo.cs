@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab3Achig")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a73f0655d8592bdabcab9d74df4d70faf9eaebe")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab3Achig")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab3Achig")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

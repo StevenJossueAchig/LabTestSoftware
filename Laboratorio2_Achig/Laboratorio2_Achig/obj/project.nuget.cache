@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tm4jfd03QMY=",
+  "dgSpecHash": "ksndQ6YgHH8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Laboratorio2_Achig\\Laboratorio2_Achig\\Laboratorio2_Achig.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\Laboratorio2_Achig\\Laboratorio2_Achig.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

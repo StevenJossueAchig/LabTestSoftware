@@ -1,7 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Lab3Achig\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5CB17F23-22CE-4B0E-9634-9EDA4F6734E9}|Lab3Achig\\Lab3Achig.csproj|c:\\users\\usuario\\desktop\\labtestsoftware\\lab3achig\\lab3achig\\views\\cliente\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CB17F23-22CE-4B0E-9634-9EDA4F6734E9}|Lab3Achig\\Lab3Achig.csproj|solutionrelative:lab3achig\\views\\cliente\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CB17F23-22CE-4B0E-9634-9EDA4F6734E9}|Lab3Achig\\Lab3Achig.csproj|c:\\users\\usuario\\desktop\\labtestsoftware\\lab3achig\\lab3achig\\views\\cliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CB17F23-22CE-4B0E-9634-9EDA4F6734E9}|Lab3Achig\\Lab3Achig.csproj|solutionrelative:lab3achig\\views\\cliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CB17F23-22CE-4B0E-9634-9EDA4F6734E9}|Lab3Achig\\Lab3Achig.csproj|c:\\users\\usuario\\desktop\\labtestsoftware\\lab3achig\\lab3achig\\views\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CB17F23-22CE-4B0E-9634-9EDA4F6734E9}|Lab3Achig\\Lab3Achig.csproj|solutionrelative:lab3achig\\views\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CB17F23-22CE-4B0E-9634-9EDA4F6734E9}|Lab3Achig\\Lab3Achig.csproj|c:\\users\\usuario\\desktop\\labtestsoftware\\lab3achig\\lab3achig\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CB17F23-22CE-4B0E-9634-9EDA4F6734E9}|Lab3Achig\\Lab3Achig.csproj|solutionrelative:lab3achig\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CB17F23-22CE-4B0E-9634-9EDA4F6734E9}|Lab3Achig\\Lab3Achig.csproj|c:\\users\\usuario\\desktop\\labtestsoftware\\lab3achig\\lab3achig\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CB17F23-22CE-4B0E-9634-9EDA4F6734E9}|Lab3Achig\\Lab3Achig.csproj|solutionrelative:lab3achig\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +51,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Lab3Achig\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Lab3Achig\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T07:35:01.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Views\\Cliente\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lab3Achig\\Views\\Cliente\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Views\\Cliente\\Index.cshtml",
+              "RelativeToolTip": "Lab3Achig\\Views\\Cliente\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T07:33:29.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Views\\Cliente\\Create.cshtml",
+              "RelativeDocumentMoniker": "Lab3Achig\\Views\\Cliente\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Views\\Cliente\\Create.cshtml",
+              "RelativeToolTip": "Lab3Achig\\Views\\Cliente\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T07:32:50.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Views\\Cliente\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Lab3Achig\\Views\\Cliente\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Views\\Cliente\\Edit.cshtml",
+              "RelativeToolTip": "Lab3Achig\\Views\\Cliente\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T07:32:49.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Views\\Cliente\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Lab3Achig\\Views\\Cliente\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Views\\Cliente\\Delete.cshtml",
+              "RelativeToolTip": "Lab3Achig\\Views\\Cliente\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T07:32:48.82Z",
+              "EditorCaption": ""
             }
           ]
         }

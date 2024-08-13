@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Laboratorio2_Achig\\Laboratorio2_Achig\\Laboratorio2_Achig.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\Laboratorio2_Achig\\Laboratorio2_Achig.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Laboratorio2_Achig\\Laboratorio2_Achig\\Laboratorio2_Achig.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\Laboratorio2_Achig\\Laboratorio2_Achig.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Laboratorio2_Achig\\Laboratorio2_Achig\\Laboratorio2_Achig.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\Laboratorio2_Achig\\Laboratorio2_Achig.csproj",
         "projectName": "Laboratorio2_Achig",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Laboratorio2_Achig\\Laboratorio2_Achig\\Laboratorio2_Achig.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\Laboratorio2_Achig\\Laboratorio2_Achig.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Laboratorio2_Achig\\Laboratorio2_Achig\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\Laboratorio2_Achig\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

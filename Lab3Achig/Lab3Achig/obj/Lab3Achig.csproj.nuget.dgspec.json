@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Lab3Achig\\Lab3Achig\\Lab3Achig.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Lab3Achig.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Lab3Achig\\Lab3Achig\\Lab3Achig.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Lab3Achig.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Lab3Achig\\Lab3Achig\\Lab3Achig.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Lab3Achig.csproj",
         "projectName": "Lab3Achig",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Lab3Achig\\Lab3Achig\\Lab3Achig.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\Lab3Achig.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Lab3Achig\\Lab3Achig\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Lab3Achig\\Lab3Achig\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.3.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
