@@ -13,15 +13,15 @@ El objetivo es demostrar la integración y manejo de estas tecnologías a travé
 
 Se requieren los siquientes componentes:
 
-* [Visual Studio 2022]([https://nodejs.org/en](https://visualstudio.microsoft.com/es/vs/))
+* [Visual Studio 2022](https://visualstudio.microsoft.com/es/vs/)
 
-* [ASP.NET Core SDK]([https://es.react.dev/](https://dotnet.microsoft.com/es-es/download/dotnet))
+* [ASP.NET Core SDK](https://dotnet.microsoft.com/es-es/download/dotnet)
 
 * [Postgres](https://www.postgresql.org/)
 
-* [MySQL]([https://nodejs.org/en](https://dev.mysql.com/downloads/installer/))
+* [MySQL](https://dev.mysql.com/downloads/installer/)
 
-* [SQL Server]([https://es.react.dev/](https://www.microsoft.com/en-us/sql-server/sql-server-downloads))
+* [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
 # Instalación
 Clona el repositorio
