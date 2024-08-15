@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EBA2810-C7A8-4C6D-A69A-09D7DBC7172D}|Laboratorio2_Achig\\Laboratorio2_Achig.csproj|c:\\users\\usuario\\desktop\\labtestsoftware\\laboratorio2_achig\\laboratorio2_achig\\data\\clientesqldataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EBA2810-C7A8-4C6D-A69A-09D7DBC7172D}|Laboratorio2_Achig\\Laboratorio2_Achig.csproj|solutionrelative:laboratorio2_achig\\data\\clientesqldataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E76394A-6511-4DBB-AB49-CD8BEAC6B0E3}|MSTestUnit\\MSTestUnit.csproj|c:\\users\\usuario\\desktop\\labtestsoftware\\laboratorio2_achig\\mstestunit\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E76394A-6511-4DBB-AB49-CD8BEAC6B0E3}|MSTestUnit\\MSTestUnit.csproj|solutionrelative:mstestunit\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EBA2810-C7A8-4C6D-A69A-09D7DBC7172D}|Laboratorio2_Achig\\Laboratorio2_Achig.csproj|c:\\users\\usuario\\desktop\\labtestsoftware\\laboratorio2_achig\\laboratorio2_achig\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EBA2810-C7A8-4C6D-A69A-09D7DBC7172D}|Laboratorio2_Achig\\Laboratorio2_Achig.csproj|solutionrelative:laboratorio2_achig\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EBA2810-C7A8-4C6D-A69A-09D7DBC7172D}|Laboratorio2_Achig\\Laboratorio2_Achig.csproj|c:\\users\\usuario\\desktop\\labtestsoftware\\laboratorio2_achig\\laboratorio2_achig\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5EBA2810-C7A8-4C6D-A69A-09D7DBC7172D}|Laboratorio2_Achig\\Laboratorio2_Achig.csproj|solutionrelative:laboratorio2_achig\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EBA2810-C7A8-4C6D-A69A-09D7DBC7172D}|Laboratorio2_Achig\\Laboratorio2_Achig.csproj|c:\\users\\usuario\\desktop\\labtestsoftware\\laboratorio2_achig\\laboratorio2_achig\\data\\clientesqldataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EBA2810-C7A8-4C6D-A69A-09D7DBC7172D}|Laboratorio2_Achig\\Laboratorio2_Achig.csproj|solutionrelative:laboratorio2_achig\\data\\clientesqldataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,40 +47,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\Laboratorio2_Achig\\Views\\Cliente\\Index.cshtml",
+              "RelativeDocumentMoniker": "Laboratorio2_Achig\\Views\\Cliente\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\Laboratorio2_Achig\\Views\\Cliente\\Index.cshtml",
+              "RelativeToolTip": "Laboratorio2_Achig\\Views\\Cliente\\Index.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAQwE8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T04:41:05.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\MSTestUnit\\UnitTest1.cs",
               "RelativeDocumentMoniker": "MSTestUnit\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\MSTestUnit\\UnitTest1.cs",
               "RelativeToolTip": "MSTestUnit\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAJAAAA",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAYwLsAAAB0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T12:47:20.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ClienteSqlDataAccessLayer.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\Laboratorio2_Achig\\Data\\ClienteSqlDataAccessLayer.cs",
               "RelativeDocumentMoniker": "Laboratorio2_Achig\\Data\\ClienteSqlDataAccessLayer.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\Laboratorio2_Achig\\Data\\ClienteSqlDataAccessLayer.cs",
               "RelativeToolTip": "Laboratorio2_Achig\\Data\\ClienteSqlDataAccessLayer.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAA3AAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T12:13:11.414Z",
+              "WhenOpened": "2024-08-14T03:11:59.432Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\Laboratorio2_Achig\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "Laboratorio2_Achig\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\LabTestSoftware\\Laboratorio2_Achig\\Laboratorio2_Achig\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "Laboratorio2_Achig\\Controllers\\ClienteController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T12:13:04.553Z"
             }
           ]
         }
