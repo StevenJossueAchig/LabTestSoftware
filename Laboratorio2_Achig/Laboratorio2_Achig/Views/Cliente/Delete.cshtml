@@ -4,12 +4,24 @@
     ViewData["Title"] = "Eliminar Cliente";
 }
 
-<h1>Eliminar Cliente</h1>
+<!-- Contenedor principal -->
+<div class="container" style="max-width: 600px; margin-top: 50px;">
+    <!-- Título -->
+    <h1 class="text-center" style="margin-bottom: 20px;">Eliminar Cliente</h1>
 
-<h3>¿Estás seguro de que deseas eliminar el cliente @Model.Nombres @Model.Apellidos?</h3>
+    <!-- Mensaje de confirmación -->
+    <div class="alert alert-warning text-center" role="alert" style="font-size: 18px;">
+        <strong>¿Estás seguro de que deseas eliminar el cliente @Model.Nombres @Model.Apellidos?</strong>
+    </div>
 
-<form asp-action="Delete" method="post">
-    <input type="hidden" name="id" value="@Model.Codigo" />
-    <button type="submit" class="btn btn-danger">Eliminar</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
-</form>
+    <!-- Formulario -->
+    <form asp-action="Delete" method="post" class="text-center" style="margin-top: 20px;">
+        <input type="hidden" name="id" value="@Model.Codigo" />
+        <button type="submit" class="btn btn-danger btn-lg" style="margin-right: 10px; padding: 10px 20px; font-size: 18px;">
+            Eliminar
+        </button>
+        <a asp-action="Index" class="btn btn-secondary btn-lg" style="padding: 10px 20px; font-size: 18px;">
+            Cancelar
+        </a>
+    </form>
+</div>

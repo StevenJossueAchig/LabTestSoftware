@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Laboratorio2_Achig.Models;
 using Laboratorio2_Achig.Data;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Laboratorio2_Achig.Controllers
 {
@@ -111,5 +112,6 @@ namespace Laboratorio2_Achig.Controllers
             }
             return View(cliente);
         }
+
     }
 }

@@ -1,62 +1,136 @@
 ﻿@model Laboratorio2_Achig.Models.ClienteSql
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-straight/css/uicons-solid-straight.css'>
 
 @{
-    ViewData["Title"] = "Update";
+    ViewData["Title"] = "Editar Cliente";
 }
 
-<h1>Edit</h1>
-
-<form asp-action="Edit" method="post">
-    @Html.AntiForgeryToken()
-    <input type="hidden" asp-for="Codigo" />
-
-    <div class="form-group">
-        <label for="cedula">Cédula</label>
-        <input type="text" name="Cedula" class="form-control" id="cedula" value="@Model.Cedula" placeholder="Cédula" maxlength="10">
+<!-- Contenedor principal -->
+<div class="container" style="max-width: 800px; margin-top: 50px;">
+    <!-- Título y botón de regreso -->
+    <div class="d-flex justify-content-start align-items-center" style="margin-bottom: 30px;">
+        <a asp-action="Index" class="btn btn-secondary btn-lg" style="padding: 10px 20px; margin-right: 20px;">
+            <i class="fi fi-ss-undo"></i>
+        </a>
+        <h1 class="text-center" style="margin-bottom: 10px;">
+            Editar Cliente
+        </h1>
     </div>
 
-    <div class="form-group">
-        <label for="apellidos">Apellidos</label>
-        <input type="text" name="Apellidos" class="form-control" id="apellidos" value="@Model.Apellidos" placeholder="Apellidos" maxlength="50">
-    </div>
+    <!-- Formulario -->
+    <form asp-action="Edit" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="Codigo" />
 
-    <div class="form-group">
-        <label for="nombres">Nombres</label>
-        <input type="text" name="Nombres" class="form-control" id="nombres" value="@Model.Nombres" placeholder="Nombres" maxlength="50">
-    </div>
+        <!-- Campos del formulario -->
+        <div class="form-group">
+            <label for="provincia">Provincia</label>
+            <select asp-for="Provincia" class="form-control form-control-lg" id="provincia" name="Provincia" onchange="generarCedula()">
+                <option value="">Seleccione una provincia</option>
+                <option value="01">Azuay</option>
+                <option value="02">Bolívar</option>
+                <option value="03">Cañar</option>
+                <option value="04">Carchi</option>
+                <option value="05">Cotopaxi</option>
+                <option value="06">Chimborazo</option>
+                <option value="07">El Oro</option>
+                <option value="08">Esmeraldas</option>
+                <option value="09">Guayas</option>
+                <option value="10">Imbabura</option>
+                <option value="11">Loja</option>
+                <option value="12">Los Ríos</option>
+                <option value="13">Manabí</option>
+                <option value="14">Morona Santiago</option>
+                <option value="15">Napo</option>
+                <option value="16">Pastaza</option>
+                <option value="17">Pichincha</option>
+                <option value="18">Tungurahua</option>
+                <option value="19">Zamora Chinchipe</option>
+                <option value="20">Galápagos</option>
+                <option value="21">Sucumbíos</option>
+                <option value="22">Orellana</option>
+                <option value="23">Santo Domingo de los Tsáchilas</option>
+                <option value="24">Santa Elena</option>
+            </select>
+            <span asp-validation-for="Provincia" class="text-danger"></span>
+        </div>
 
-    <div class="form-group">
-        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-        <input name="FechaNacimiento" type="date" class="form-control" id="fechaNacimiento" value="@Model.FechaNacimiento.ToString("yyyy-MM-dd")" />
-    </div>
+        <div class="form-group">
+            <label for="cedula">Cédula</label>
+            <input type="text" name="Cedula" class="form-control form-control-lg" id="cedula" value="@Model.Cedula" placeholder="Cédula" maxlength="10" readonly>
+        </div>
 
-    <div class="form-group">
-        <label for="mail">Mail</label>
-        <input type="email" name="Mail" class="form-control" id="mail" value="@Model.Mail" placeholder="Mail">
-    </div>
+        <div class="form-group">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="Apellidos" class="form-control form-control-lg" id="apellidos" value="@Model.Apellidos" placeholder="Apellidos" maxlength="50"
+                   pattern="[A-Za-z\s]*" title="Los apellidos solo deben contener letras y espacios. No puede contener números ni caracteres especiales."
+                   oninput="validateApellidos(this)" required>
+            <span asp-validation-for="Apellidos" class="text-danger"></span>
+        </div>
 
-    <div class="form-group">
-        <label for="telefono">Teléfono</label>
-        <input type="text" name="Telefono" class="form-control" id="telefono" value="@Model.Telefono" placeholder="Teléfono" maxlength="10">
-    </div>
+        <div class="form-group">
+            <label for="nombres">Nombres</label>
+            <input type="text" name="Nombres" class="form-control form-control-lg" id="nombres" value="@Model.Nombres" placeholder="Nombres" maxlength="50"
+                   pattern="[A-Za-z\s]*" title="Los nombres solo deben contener letras y espacios. No puede contener números ni caracteres especiales."
+                   oninput="validateNombres(this)" required>
+            <span asp-validation-for="Nombres" class="text-danger"></span>
+        </div>
 
-    <div class="form-group">
-        <label for="direccion">Dirección</label>
-        <input type="text" name="Direccion" class="form-control" id="direccion" value="@Model.Direccion" placeholder="Dirección" maxlength="200">
-    </div>
+        <div class="form-group">
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input asp-for="FechaNacimiento"
+                   type="date"
+                   class="form-control form-control-lg"
+                   id="fechaNacimiento"
+                   min="1950-01-01"
+                   max="2006-12-31"
+                   required />
+            <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+        </div>
 
-    <div class="form-check">
-        <input asp-for="Estado" id="estado" type="checkbox" class="form-check-input" checked="@Model.Estado">
-        <label class="form-check-label" asp-for="Estado">Estado</label>
-    </div>
+        <div class="form-group">
+            <label for="mail">Mail</label>
+            <input type="email" name="Mail" class="form-control form-control-lg" id="mail" value="@Model.Mail" placeholder="Mail">
+        </div>
 
-    <div class="card-footer">
-        <button type="submit" class="btn btn-success btn-sm">
-            <i class="fas fa-save"></i> Guardar
-        </button>
-    </div>
-</form>
+        <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="text" name="Telefono" class="form-control form-control-lg" id="telefono" value="@Model.Telefono" placeholder="Teléfono" maxlength="10"
+                   pattern="\d{1,10}" title="El teléfono debe contener solo números y debe tener hasta 10 dígitos."
+                   oninput="this.value = this.value.replace(/\D/g, '')" required>
+            <span asp-validation-for="Telefono" class="text-danger"></span>
+        </div>
 
-<div>
-    <a asp-action="Index" class="btn btn-secondary"> << Regresar</a>
+        <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" name="Direccion" class="form-control form-control-lg" id="direccion" value="@Model.Direccion" placeholder="Dirección" maxlength="200">
+        </div>
+
+        <div class="form-group">
+            <label for="saldo">Saldo</label>
+            <input type="decimal" name="Saldo" class="form-control form-control-lg" id="saldo" value="@Model.Saldo" placeholder="Saldo" step="0.01" min="0" />
+            <span asp-validation-for="Saldo" class="text-danger"></span>
+        </div>
+
+        <div class="form-check">
+            <input asp-for="Estado" id="estado" type="checkbox" class="form-check-input" checked="@Model.Estado">
+            <label class="form-check-label" asp-for="Estado">Estado</label>
+        </div>
+
+        <div class="text-center" style="margin-top: 20px;">
+            <button type="submit" class="btn btn-success btn-lg" style="padding: 10px 20px;">
+                <i class="fas fa-save"></i> Guardar
+            </button>
+        </div>
+    </form>
 </div>
+
+<script>
+    function validateApellidos(input) {
+        input.value = input.value.replace(/[^A-Za-z\s]/g, '');
+    }
+
+    function validateNombres(input) {
+        input.value = input.value.replace(/[^A-Za-z\s]/g, '');
+    }
+</script>

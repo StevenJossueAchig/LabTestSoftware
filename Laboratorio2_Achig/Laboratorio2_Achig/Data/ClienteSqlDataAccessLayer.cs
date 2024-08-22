@@ -45,7 +45,9 @@ namespace Laboratorio2_Achig.Data
                                     Mail = rdr["mail"] != DBNull.Value ? rdr["mail"].ToString() : string.Empty,
                                     Telefono = rdr["telefono"] != DBNull.Value ? rdr["telefono"].ToString() : string.Empty,
                                     Direccion = rdr["direccion"] != DBNull.Value ? rdr["direccion"].ToString() : string.Empty,
-                                    Estado = rdr["estado"] != DBNull.Value ? Convert.ToBoolean(rdr["estado"]) : false
+                                    Estado = rdr["estado"] != DBNull.Value ? Convert.ToBoolean(rdr["estado"]) : false,
+                                    Saldo = rdr["saldo"] != DBNull.Value ? Convert.ToDecimal(rdr["saldo"]) : 0m,  // o Convert.ToDecimal si usas decimal en la base de datos
+                                    Provincia = rdr["provincia"] != DBNull.Value ? rdr["provincia"].ToString() : string.Empty
                                 };
 
                                 lst.Add(cliente);
@@ -66,27 +68,40 @@ namespace Laboratorio2_Achig.Data
         // Para agregar un nuevo registro de Cliente
         public void AddCliente(ClienteSql cliente)
         {
-            using (NpgsqlConnection con = new NpgsqlConnection(connectionString))
+            try
             {
-                string query = "INSERT INTO Cliente (Cedula, Apellidos, Nombres, FechaNacimiento, Mail, Telefono, Direccion, Estado) " +
-                               "VALUES (@cedula, @apellidos, @nombres, @fechaNacimiento, @mail, @telefono, @direccion, @estado)";
-
-                using (NpgsqlCommand cmd = new NpgsqlCommand(query, con))
+                using (NpgsqlConnection con = new NpgsqlConnection(connectionString))
                 {
-                    cmd.Parameters.AddWithValue("@cedula", cliente.Cedula);
-                    cmd.Parameters.AddWithValue("@apellidos", cliente.Apellidos);
-                    cmd.Parameters.AddWithValue("@nombres", cliente.Nombres);
-                    cmd.Parameters.AddWithValue("@fechaNacimiento", cliente.FechaNacimiento);
-                    cmd.Parameters.AddWithValue("@mail", cliente.Mail);
-                    cmd.Parameters.AddWithValue("@telefono", cliente.Telefono);
-                    cmd.Parameters.AddWithValue("@direccion", cliente.Direccion);
-                    cmd.Parameters.AddWithValue("@estado", cliente.Estado);
+                    string query = "INSERT INTO Cliente (Cedula, Apellidos, Nombres, FechaNacimiento, Mail, Telefono, Direccion, Estado, Provincia, Saldo) " +
+                                   "VALUES (@cedula, @apellidos, @nombres, @fechaNacimiento, @mail, @telefono, @direccion, @estado, @provincia, @saldo)";
 
-                    con.Open();
-                    cmd.ExecuteNonQuery();
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@provincia", cliente.Provincia);
+                        cmd.Parameters.AddWithValue("@cedula", cliente.Cedula);
+                        cmd.Parameters.AddWithValue("@apellidos", cliente.Apellidos);
+                        cmd.Parameters.AddWithValue("@nombres", cliente.Nombres);
+                        cmd.Parameters.AddWithValue("@fechaNacimiento", cliente.FechaNacimiento);
+                        cmd.Parameters.AddWithValue("@mail", cliente.Mail);
+                        cmd.Parameters.AddWithValue("@telefono", cliente.Telefono);
+                        cmd.Parameters.AddWithValue("@direccion", cliente.Direccion);
+                        cmd.Parameters.AddWithValue("@estado", cliente.Estado);
+                        cmd.Parameters.AddWithValue("@saldo", cliente.Saldo);
+
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones: registrar el error, mostrar un mensaje al usuario, etc.
+                Console.WriteLine($"Error al agregar cliente: {ex.Message}");
+                // Dependiendo de la aplicación, podrías lanzar una excepción o manejar el error de otra forma
+                throw;
+            }
         }
+
 
 
         // Para actualizar un registro en particular de un Cliente
@@ -95,8 +110,8 @@ namespace Laboratorio2_Achig.Data
             using (NpgsqlConnection con = new NpgsqlConnection(connectionString))
             {
                 string query = "UPDATE Cliente SET Cedula = @cedula, Apellidos = @apellidos, Nombres = @nombres, " +
-                               "FechaNacimiento = @fechaNacimiento, Mail = @mail, Telefono = @telefono, Direccion = @direccion, " +
-                               "Estado = @estado WHERE Codigo = @codigo";
+               "FechaNacimiento = @fechaNacimiento, Mail = @mail, Telefono = @telefono, Direccion = @direccion, " +
+               "Estado = @estado, Provincia = @provincia, Saldo = @saldo WHERE Codigo = @codigo";
 
                 using (NpgsqlCommand cmd = new NpgsqlCommand(query, con))
                 {
@@ -109,6 +124,8 @@ namespace Laboratorio2_Achig.Data
                     cmd.Parameters.AddWithValue("@telefono", cliente.Telefono);
                     cmd.Parameters.AddWithValue("@direccion", cliente.Direccion);
                     cmd.Parameters.AddWithValue("@estado", cliente.Estado);
+                    cmd.Parameters.AddWithValue("@provincia", cliente.Provincia); // Nueva línea para Provincia
+                    cmd.Parameters.AddWithValue("@saldo", cliente.Saldo);       // Nueva línea para Saldo
 
                     con.Open();
                     cmd.ExecuteNonQuery();
@@ -142,6 +159,8 @@ namespace Laboratorio2_Achig.Data
                             cliente.Mail = rdr["Mail"].ToString();
                             cliente.Telefono = rdr["Telefono"].ToString();
                             cliente.Direccion = rdr["Direccion"].ToString();
+                            cliente.Saldo = Convert.ToDecimal(rdr["Saldo"]);
+                            cliente.Provincia = rdr["Provincia"].ToString();
                             cliente.Estado = Convert.ToBoolean(rdr["Estado"]);
                         }
                     }
